@@ -1,0 +1,60 @@
+<!-- Aleksandr Chamin-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sound</title>
+</head>
+<body>
+    <h1> Sound Machine</h1>
+    <div class="box">
+
+        <input type = "button" id="noteOne" value="    A4    " onclick="playNoteOne()"><br><br><br>
+
+        <input type = "button" id="noteTwo" value="    D6    " onclick="playNoteTwo()"><br><br><br>
+
+        <input type = "button" id="noteThree" value="    E6    " onclick="playNoteThree()"><br><br><br>
+
+        <input type = "button" id="noteFour" value="    F5    " onclick="playNoteFour()"><br><br><br>
+
+        <input type = "button" id="noteFive" value="    G3    " onclick="playNoteFive()"><br><br><br>
+
+    </div>
+    <style>
+        .box {
+            background-color:#FF0000;
+            padding:25px;
+            border-radius:20px;
+            display:inline-block;
+        }
+    </style>
+    <script>
+        function playNoteOne() {
+            var note = new Audio('A4.mp3');
+            note.play();
+        }
+
+        function playNoteTwo() {
+            var note = new Audio('D6.mp3');
+            note.play();
+        }
+
+        function playNoteThree() {
+            var note = new Audio('E6.mp3');
+            note.play();
+        }
+
+        function playNoteFour() {
+            var note = new Audio('F5.mp3');
+            note.play();
+        }
+
+        function playNoteFive() {
+            var note = new Audio('G3.mp3');
+            note.play();
+        }
+    </script>
+    
+</body>
+</html>
